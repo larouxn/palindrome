@@ -3,8 +3,8 @@
 ######################################
 # Nicholas La Roux                   #
 # May 2015                           #
-# Check if a string is a palindrome, #
-# can be a palindrome, and make a    #
+# Check if a string is a palindrome  #
+# if not, can it be, if so make a    #
 # palindrome of it.                  #
 ######################################
 
