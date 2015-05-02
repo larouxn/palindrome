@@ -1,13 +1,3 @@
-#!/usr/bin/env ruby
-
-######################################
-# Nicholas La Roux                   #
-# May 2015                           #
-# Check if a string is a palindrome  #
-# if not, can it be, if so make a    #
-# palindrome of it.                  #
-######################################
-
 freq_hash = {} and palindrome = "" and word = gets.chomp and letters = word.split('') and letters.each do |letter|
   freq_hash.has_key?(letter) ? freq_hash[letter] += 1 : freq_hash[letter] = 1
 end
