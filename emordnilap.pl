@@ -1,4 +1,3 @@
-palindrome(X):- rev(X,Y), X == Y.
-rev(L,R):- accRev(L,[],R).
+palindrome(X):- accRev(X,[],Y), X == Y.
 accRev([H|T],A,R):- accRev(T,[H|A],R).
 accRev([],A,A).
