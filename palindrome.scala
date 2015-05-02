@@ -1,3 +1,11 @@
+////////////////////////////////////////
+// John Paul Welsh                    //
+// May 2015                           //
+// Check if a string is a palindrome  //
+// if not, can it be, if so make a    //
+// palindrome of it.                  //
+////////////////////////////////////////
+
 def isPalindrome(ls: List[Char]): Boolean = (ls take (ls.length / 2)) == ((ls takeRight (ls.length / 2)).reverse)
 def canBePalindrome(ls: List[Char]): (Boolean, List[Char]) = {
   var canBe = false; var validPerm = List[Char]()
