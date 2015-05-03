@@ -1,4 +1,4 @@
-main = (x) ->
+main = (x) -> # Run by passing a string into main, i.e. main("racecar")
   [palindrome, freq, numberOfOdds] = ["", {}, 0]
   isPalindrome = (x) -> if x == x.split("").reverse().join "" then true else false
   cannotBePalindrome = (x) -> if numberOfOdds > 1 then true else false
