@@ -8,8 +8,10 @@ Spec
 - Rearrange string to be palindromic and print it to the console if possible
 
 Languages
+- [ ] Arduino
 - [ ] Bash
 - [x] CoffeeScript (larouxn)
+- [ ] D
 - [ ] Dart
 - [ ] dogescript
 - [x] Elm (robwhitaker)
@@ -18,12 +20,14 @@ Languages
 - [ ] Fancy
 - [ ] Frege
 - [ ] Go
+- [ ] Gosu
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
 - [ ] JavaScript
 - [ ] Latte
 - [ ] Lua
 - [ ] OCaml
+- [ ] Perl
 - [ ] Prolog (Yuxrier) - in progress
 - [ ] Python
 - [x] Ruby (larouxn)
