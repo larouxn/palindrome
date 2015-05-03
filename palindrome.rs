@@ -1,7 +1,10 @@
 use std::env;
 
 fn is_palindrome(input: &str) -> bool {
-    
+    let ch_vec: Vec<&str> = input.split("").collect();
+
+    let mut front_vec: Vec<&str> = vec![];
+    let mut back_vec: Vec<&str> = vec![];
     return true;
 }
 
