@@ -29,6 +29,7 @@ Languages
 - [ ] OCaml
 - [ ] Perl
 - [ ] Prolog (Yuxrier) - in progress
+- [ ] PureScript
 - [ ] Python
 - [x] Ruby (larouxn)
 - [ ] Rust
