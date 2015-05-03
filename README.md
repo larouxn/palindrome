@@ -8,17 +8,24 @@ Spec
 - Rearrange string to be palindromic and print it to the console if possible
 
 Languages
+- [ ] Bash
 - [x] CoffeeScript (larouxn)
 - [ ] Dart
+- [ ] dogescript
 - [x] Elm (robwhitaker)
 - [x] Erlang (johnpaulwelsh)
 - [ ] Elixir (larouxn) - in progress
+- [ ] Fancy
+- [ ] Frege
 - [ ] Go
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
 - [ ] JavaScript
+- [ ] Latte
+- [ ] Lua
 - [ ] OCaml
 - [ ] Prolog (Yuxrier) - in progress
 - [ ] Python
 - [x] Ruby (larouxn)
+- [ ] Rust
 - [x] Scala (johnpaulwelsh)
