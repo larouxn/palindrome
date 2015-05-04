@@ -32,5 +32,6 @@ Languages
 - [ ] PureScript
 - [ ] Python
 - [x] Ruby (larouxn)
-- [ ] Rust
+- [x] Rust (johnpaulwelsh) - in progess
 - [x] Scala (johnpaulwelsh)
+
