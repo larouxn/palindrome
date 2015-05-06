@@ -1,4 +1,5 @@
 use std::env;
+use std::collections::HashMap;
 
 fn is_palindrome(ch_vec: Vec<&str>) -> bool {
     let mut ch_vec_1 = ch_vec.to_vec();
@@ -13,7 +14,15 @@ fn main() {
     let ch_vec: Vec<&str> = input.split("").collect();
     let is_pal = is_palindrome(ch_vec);
     println!("Is {} a palindrome? {}", input, is_pal);
-    if is_pal {
+    if !is_pal {
+        let mut map: HashMap<&str, i32> = HashMap::new();
+        for c in ch_vec.to_vec() {
+            if let Some(n) = map.get(c) {
+                map.insert(c, n+1);
+            } else {
+                map.insert(c, 1);
+            }
+        }
         // stuff here, will do later
     }
 }

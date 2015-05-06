@@ -26,7 +26,7 @@ Languages
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
 - [ ] JavaScript
-- [ ] Keylon
+- [ ] Kotlin (johnpaulwelsh) - in progress
 - [ ] Lua
 - [ ] OCaml
 - [ ] Perl
@@ -34,6 +34,5 @@ Languages
 - [ ] PureScript
 - [ ] Python
 - [x] Ruby (larouxn)
-- [ ] Rust (johnpaulwelsh) - in progess
+- [ ] Rust (johnpaulwelsh) - in progress
 - [x] Scala (johnpaulwelsh)
-
