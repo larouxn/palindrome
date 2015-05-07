@@ -15,16 +15,18 @@ defmodule Palindrome do
   end
 
   def is_palindrome(string) do
-    if string == String.reverse(string) do
-      IO.puts "#{string} is a palindrome."
-    else
-      IO.puts "#{string} is not palindrome."
-    end
+    if string == String.reverse(string), do: true, else: false
   end
 
   # def create(map) do
   # end
 
   # def main(string) do
+  #   letters = count_letters(string)
+  #   cond do
+  #     is_palindrome(string)       -> IO.puts "#{string} is a palindrome."
+  #     !can_be_palindrome(letters) -> IO.puts "#{string} cannot be made into a palindrome."
+  #     true                        -> create(string)
+  #   end
   # end
 end
