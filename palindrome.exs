@@ -7,16 +7,13 @@ defmodule Palindrome do
   odd? = &(rem(&1, 2) != 0) # from Elixir's site | Enum.filter(1..3, odd?)
 
   def palindrome?(string) do
-    if string == String.reverse(string), do: IO.puts "#{string} is a palindrome."
-  end
-
-  def counting(map, key) do
-    if Map.has_key?(map, key) do
-      Map.put(map, "bringo")
+    if string == String.reverse(string) do
+      IO.puts "#{string} is a palindrome."
     else
-      Map.put(map, String.to_atom(x), 1)
+      IO.puts "#{string} is not palindrome."
     end
   end
 
-  Enum.map(letters, fn x -> if Map.has_key?(freq, x), do: freq[x] += 1, else: freq[x] = 1 end)
+  List.foldl(letters, %{}, fn(x, acc) -> Map.update(acc, String.to_atom(x), 1, fn(val) -> val + 1 end) end)
+  
 end
