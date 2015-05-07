@@ -8,7 +8,7 @@ main = (x) -> # Run by passing a string into main, i.e. main("racecar")
   for letter, amount of freq
     numberOfOdds++ if amount % 2 != 0
 
-  if isPalindrome(x) then console.log("#{x} is already a palindrome.")
+  if isPalindrome(x) then console.log("#{x} is a palindrome.")
   else if cannotBePalindrome(x) then console.log("#{x} cannot be made into a palindrome.")
   else
     for letter, amount of freq
