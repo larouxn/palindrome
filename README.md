@@ -10,6 +10,7 @@ Spec
 Languages
 - [ ] Arduino
 - [ ] Bash
+- [ ] Ceylon
 - [x] CoffeeScript (larouxn)
 - [ ] D
 - [ ] Dart
@@ -18,13 +19,14 @@ Languages
 - [x] Erlang (johnpaulwelsh)
 - [ ] Elixir (larouxn) - in progress
 - [ ] Fancy
+- [ ] Fantom
 - [ ] Frege
 - [ ] Go
 - [ ] Gosu
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
 - [ ] JavaScript
-- [ ] Latte
+- [ ] Kotlin (johnpaulwelsh) - in progress
 - [ ] Lua
 - [ ] OCaml
 - [ ] Perl
@@ -32,6 +34,5 @@ Languages
 - [ ] PureScript
 - [ ] Python
 - [x] Ruby (larouxn)
-- [x] Rust (johnpaulwelsh) - in progess
+- [ ] Rust (johnpaulwelsh) - in progress
 - [x] Scala (johnpaulwelsh)
-

@@ -9,19 +9,8 @@ perms([]) -> [[]];
 perms(L)  -> [[H|T] || H <- L, T <- perms(L--[H])].
 
 isPalindrome(InputString) ->
-  StrLen = string:len(InputString),
-  FirstHalf = if
-    StrLen =:= 1 -> InputString;
-    true         -> string:sub_string(InputString, 1, StrLen div 2)
-  end,
-  SecondHalf = lists:reverse(
-    if
-      StrLen         =:= 1 -> InputString;
-      (StrLen rem 2) =:= 0 -> string:sub_string(InputString, StrLen div 2 + 1, StrLen);
-      true                 -> string:sub_string(InputString, StrLen div 2 + 2, StrLen)
-    end
-  ),
-  FirstHalf =:= SecondHalf.
+  Rev = lists:reverse(InputString),
+  InputString =:= Rev.
 
 findPalindrome(InputString) ->
   IsPal = isPalindrome(InputString),
