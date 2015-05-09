@@ -17,11 +17,11 @@ Languages
 - [ ] dogescript
 - [x] Elm (robwhitaker)
 - [x] Erlang (johnpaulwelsh)
-- [ ] Elixir (larouxn) - in progress
+- [x] Elixir (larouxn)
 - [ ] Fancy
 - [ ] Fantom
 - [ ] Frege
-- [ ] Go
+- [ ] Go (larouxn) - in progress
 - [ ] Gosu
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
