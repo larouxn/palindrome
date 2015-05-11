@@ -4,7 +4,7 @@ import "fmt"
 
 var word string = "racecar"
 
-// Borrowed from Russ Cox | http://goo.gl/XrHvrk | slightly modified
+// Graciously borrowed from Russ Cox | http://goo.gl/XrHvrk | slightly modified
 func reverse(input string) string {
     // Get Unicode code points.
     n := 0
