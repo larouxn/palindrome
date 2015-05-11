@@ -25,7 +25,7 @@ Languages
 - [ ] Gosu
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
-- [ ] JavaScript
+- [ ] JavaScript (larouxn) - in progress
 - [ ] Kotlin (johnpaulwelsh) - in progress
 - [ ] Lua
 - [ ] OCaml
