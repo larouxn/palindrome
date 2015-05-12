@@ -15,8 +15,8 @@ function canBePalindrome(string) {
   for (letter of word.split("")) {
     freq.hasOwnProperty(letter) ? freq[letter]++ : freq[letter] = 1
   }
-  for (letter of Object.getOwnPropertyNames(freq)) {
-    if (freq[letter] % 2 != 0) numberOfOdds++
+  for (key in freq) {
+    if (freq[key] % 2 != 0) numberOfOdds++
   }
 
   numberOfOdds > 1 ? false : true
