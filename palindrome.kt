@@ -16,20 +16,40 @@ fun main(args: Array<String>) {
     if (map.count( {entry -> (entry.value % 2 != 0)} ) > 1) {
       println(args[0] + " cannot be made into a palindrome")
     } else {
-      var builtString  = ""
-      var oddCountMap  = map.filter( {entry -> (entry.value % 2 != 0)} )
-      var evenCountMap = map.filterNot( {entry -> (entry.value % 2 != 0)} )
+      var builtStringEvens = ""
+      var oddCountMap      = map.filter( {entry -> (entry.value % 2 != 0)} )
+      var evenCountMap     = map.filterNot( {entry -> (entry.value % 2 != 0)} )
 
       for (entry in evenCountMap) {
-        builtString += entry.key
-        map.put(entry.key, entry.value-1)
+        val goalVal = entry.value / 2
+        while (goalVal <= entry.value) {
+          builtStringEvens += entry.key
+          map.put(entry.key, entry.value-1)
+        }
       }
 
-      // 1) if there is one, decrement count of odd-#'d char and put it in a string
-      // 2) make a string out of n/2 instances of the even-#'d characters, add it to
-      // the beginning
-      builtString += builtString.reverse()
-      println("A palindromic form of this word is " + builtString)
+      println("done even building")
+
+      var builtStringOdds = ""
+      var singleOdd       = ""
+      for (entry in oddCountMap) {
+        if (entry.value == 1) {
+          singleOdd = entry.key
+          map.put(entry.key, 0)
+        } else {
+          val goalVal = entry.value / 2
+          while (goalVal <= entry.value) {
+            builtStringOdds += entry.key
+            map.put(entry.key, entry.value-1)
+          }
+        }
+      }
+
+      println("done odd building")
+
+      var fullBuiltString = builtStringEvens + builtStringOdds + singleOdd
+      fullBuiltString += fullBuiltString.reverse()
+      println("A palindromic form of this word is " + fullBuiltString)
     }
   }
 }
