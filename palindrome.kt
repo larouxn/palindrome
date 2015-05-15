@@ -20,36 +20,9 @@ fun main(args: Array<String>) {
       var oddCountMap      = map.filter( {entry -> (entry.value % 2 != 0)} )
       var evenCountMap     = map.filterNot( {entry -> (entry.value % 2 != 0)} )
 
-      for (entry in evenCountMap) {
-        val goalVal = entry.value / 2
-        while (goalVal <= entry.value) {
-          builtStringEvens += entry.key
-          map.put(entry.key, entry.value-1)
-        }
-      }
+      
 
       println("done even building")
-
-      var builtStringOdds = ""
-      var singleOdd       = ""
-      for (entry in oddCountMap) {
-        if (entry.value == 1) {
-          singleOdd = entry.key
-          map.put(entry.key, 0)
-        } else {
-          val goalVal = entry.value / 2
-          while (goalVal <= entry.value) {
-            builtStringOdds += entry.key
-            map.put(entry.key, entry.value-1)
-          }
-        }
-      }
-
-      println("done odd building")
-
-      var fullBuiltString = builtStringEvens + builtStringOdds + singleOdd
-      fullBuiltString += fullBuiltString.reverse()
-      println("A palindromic form of this word is " + fullBuiltString)
     }
   }
 }
