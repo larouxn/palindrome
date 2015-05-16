@@ -40,12 +40,14 @@ Kotlin
 
 - Run: `java -jar palindrome.jar INPUT_STRING`
 
+Ruby
+
+- Open REPL: `irb`
+
+- Import module by pasting in code
+
+- Run `Palindrome.main("word or phrase of your choice")`
+
 Scala
 
 - Run: `scala [-nocompdaemon] palindrome.scala INPUT_STRING`
-
-Ruby
-
-- Run `ruby palindrome.ruby`
-
-- Type in a word or phrase of your choice
