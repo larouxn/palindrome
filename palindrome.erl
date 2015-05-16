@@ -1,20 +1,15 @@
 -module(palindrome).
 -export([isPalindrome/1]).
 -export([display/1]).
--export([findPalindrome/1]).
+-export([createPalindrome/1]).
 
-isPalindrome(InputString) -> InputString =:= lists:reverse(InputString).
-
-findPalindrome(InputString) ->
-  IsPal = isPalindrome(InputString),
-  if
-    IsPal -> InputString;
-    true  -> ""
-  end.
+isPalindrome(InputString) ->
+  InputString =:= lists:reverse(InputString).
 
 createPalindrome(InputString) ->
-  % do stuff
-  end.
+  MyMap = map:new(),
+  % blah
+  MyMap.
 
 display(InputString) ->
   InputIsPalindrome = isPalindrome(InputString),
