@@ -17,3 +17,7 @@ Kotlin
 Scala
 
 - Run: `scala [-nocompdaemon] palindrome.scala INPUT_STRING`
+
+Dart
+
+- Run: `dart palindrome.dart`
