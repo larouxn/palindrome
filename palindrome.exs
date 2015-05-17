@@ -26,15 +26,15 @@ defmodule Palindrome do # Needs serious refactoring, more |>, less variables
     even_map = Map.update(map, String.to_atom(odd_char), 0, fn(val) -> val - 1 end)
     concat_list = Enum.map(even_map, fn({key, val}) -> String.duplicate(Atom.to_string(key), round(val / 2)) end)
     left_side = List.foldl(concat_list, "", fn (x, acc) -> x <> acc end)
-    IO.puts(left_side <> odd_char <> String.reverse(left_side))
+    IO.puts("#{string} as a palindrome: #{(left_side <> odd_char <> String.reverse(left_side))}")
   end
-  
+
   def main(string) do
     letters = count_letters(string)
     cond do
-      is_palindrome(string)       -> IO.puts "#{string} is a palindrome."
+      is_palindrome(string)       -> IO.puts "#{string} is already a palindrome."
       !can_be_palindrome(letters) -> IO.puts "#{string} cannot be made into a palindrome."
       true                        -> create_palindrome(string)
     end
   end
-end # First attempt at functional programming, ever
+end # First attempt at functional programming

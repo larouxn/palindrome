@@ -58,10 +58,10 @@ function createPalindrome(string) {
 function main(string) {
   freq = countLetters(string);
   if(isPalindrome(string)) {
-    console.log(string.concat(" is a palindrome."))
+    console.log(string.concat(" is already a palindrome."))
   } else if(!canBePalindrome(string)) {
     console.log(string.concat(" cannot be made into a palindrome."))
   } else {
-    console.log(createPalindrome(string))
+    console.log((string.concat(" as a palindrome: ")).concat(createPalindrome(string)))
   }
 }

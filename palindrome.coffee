@@ -8,11 +8,11 @@ main = (x) -> # Run by passing a string into main, i.e. main("racecar")
   for letter, amount of freq
     numberOfOdds++ if amount % 2 != 0
 
-  if isPalindrome(x) then console.log("#{x} is a palindrome.")
+  if isPalindrome(x) then console.log("#{x} is already a palindrome.")
   else if cannotBePalindrome(x) then console.log("#{x} cannot be made into a palindrome.")
   else
     for letter, amount of freq
       if amount % 2 != 0 then (palindrome = letter) && (freq[letter]--)
     for letter, amount of freq
       if amount != 0 then palindrome = (Array(Math.floor(amount / 2) + 1).join(letter)) + palindrome + (Array(Math.floor(amount / 2) + 1).join(letter))
-    console.log("#{x} as a palindrome: #{palindrome}")
+    console.log("Palindrome of #{x}: #{palindrome}")
