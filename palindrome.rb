@@ -26,11 +26,11 @@ module Palindrome
   def Palindrome.main(string)
     freq = Palindrome.count_letters(string)
     if Palindrome.is_a?(string)
-      puts "Already a palindrome."
+      puts "#{string} is already a palindrome."
     elsif !Palindrome.can_be_a?(freq)
-      puts "Cannot be made into a palindrome."
+      puts "#{string} cannot be made into a palindrome."
     else
-      puts "Palindrome: #{Palindrome.create(freq)}"
+      puts "Palindrome of #{string}: #{Palindrome.create(freq)}"
     end
   end
 end
