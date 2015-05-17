@@ -10,13 +10,12 @@ module Palindrome
     string == string.reverse ? true : false
   end
 
-  def Palindrome.can_be_a?(string)
-    freq = Palindrome.count_letters(string)
+  def Palindrome.can_be_a?(freq)
     freq.values.select {|num| num.odd?}.length <= 1 ? true : false
   end
 
-  def Palindrome.create(string)
-    freq = Palindrome.count_letters(string) and palindrome = ""
+  def Palindrome.create(freq)
+    palindrome = ""
     # Handle letter that occurs an odd number of times
     freq.each_pair {|key, value| palindrome = key and value - 1 if value.odd? }
     freq.each_pair do |key, value|
@@ -25,12 +24,13 @@ module Palindrome
   end
 
   def Palindrome.main(string)
+    freq = Palindrome.count_letters(string)
     if Palindrome.is_a?(string)
       puts "Already a palindrome."
-    elsif !Palindrome.can_be_a?(string)
+    elsif !Palindrome.can_be_a?(freq)
       puts "Cannot be made into a palindrome."
     else
-      puts "Palindrome: #{Palindrome.create(string)}"
+      puts "Palindrome: #{Palindrome.create(freq)}"
     end
   end
 end
