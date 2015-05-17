@@ -13,7 +13,7 @@ Languages
 - [ ] Ceylon
 - [x] CoffeeScript (larouxn)
 - [ ] D
-- [ ] Dart (larouxn) - in progress
+- [x] Dart (larouxn)
 - [ ] dogescript
 - [x] Elm (robwhitaker)
 - [ ] Erlang (johnpaulwelsh) - in progress

@@ -1,59 +1,64 @@
 import 'dart:io';
 
+var palindrome = "";
+var freq = new Map();
+
 Map countLetters(String string) {
-    var freq  = new Map();
-    for (var letter in string.split('')) {
-        if (freq.containsKey(letter)) {
-            ++freq[letter];
-        } else {
-            freq[letter] = 1;
-        }
+  for (var letter in string.split('')) {
+    if (freq.containsKey(letter)) {
+      ++freq[letter];
+    } else {
+      freq[letter] = 1;
     }
-    return freq;
+  }
+  return freq;
 }
 
-Bool isPalindrome(String input) {
-    return (input == input.split('').reversed.join(''))
-        ? true
-        : false;
+Bool isPalindrome(String string) {
+  return (string == string.split('').reversed.join(''))
+    ? true
+    : false;
 }
 
 Bool canBePalindrome(Map freq) {
-    var numberOfOdds = 0;
-    for (var amount in freq.values) {
-        if (amount % 2 != 0) {
-            ++numberOfOdds;
-        }
+  var numberOfOdds = 0;
+  for (var amount in freq.values) {
+    if (amount % 2 != 0) {
+      ++numberOfOdds;
     }
-    return (numberOfOdds <= 1)
-        ? true
-        : false;
+  }
+  return (numberOfOdds <= 1)
+    ? true
+    : false;
 }
 
-// String createPalindrome(Map freq) {
-//
-// }
+void findOdd(Symbol k, Num v) {
+  if (v % 2 != 0) {
+    palindrome = palindrome + k.toString();
+    freq[k] -= 1;
+  }
+}
+
+String combineParts(Symbol k, Num v) {
+  palindrome = palindrome + (k * (v / 2).floor());
+  palindrome = (k * (v / 2).floor()) + palindrome;
+}
+
+String createPalindrome(Map freq) {
+  freq.forEach((k, v) => findOdd(k, v));
+  freq.forEach((k, v) => combineParts(k, v));
+  return palindrome;
+}
 
 void main() {
-    stdout.writeln("Enter a word or phrase");
-    String input = stdin.readLineSync();
-    Map freq = countLetters(input);
-    if (canBePalindrome(freq)) {
-        print("Can totally be a pally.");
-    } else {
-        print("Cannot be a pally.");
-    }
+  stdout.writeln("Enter a word or phrase");
+  String input = stdin.readLineSync();
+  freq = countLetters(input);
+  if (isPalindrome(input)) {
+      print("$input is already a palindrome.");
+  } else if (!canBePalindrome(freq)) {
+      print("$input cannot be made into a palindrome.");
+  } else {
+      print("Palindrome of $input: ${createPalindrome(freq)}");
+  }
 }
-
-// void main() {
-//     stdout.writeln("Enter a word or phrase");
-//     String input = stdin.readLineSync();
-//     Map freq = countLetters(input);
-//     if (isPalindrome(input)) {
-//         print("$input is already a palindrome.");
-//     } else if (canBePalindrome(freq)) {
-//         print("$input cannot be made into a palindrome.");
-//     } else {
-//         print("Palindrome of $string: ${Palindrome.create(freq)}");
-//     }
-// }
