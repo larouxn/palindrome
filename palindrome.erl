@@ -7,15 +7,11 @@ isPalindrome(InputString) ->
   InputString =:= lists:reverse(InputString).
 
 createPalindrome(InputString) ->
-  MyMap = map:new(),
-  % blah
-  MyMap.
+  io:format("dingo").
 
 display(InputString) ->
   InputIsPalindrome = isPalindrome(InputString),
   if
-    InputIsPalindrome =:= true ->
-      io:format("~s is a palindrome!~n", [InputString]);
-    true ->
-      createPalindrome(InputString)
+    InputIsPalindrome =:= true -> io:format("~s is a palindrome!~n", [InputString]);
+    true                       -> createPalindrome(InputString)
   end.

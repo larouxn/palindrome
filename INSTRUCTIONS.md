@@ -48,6 +48,12 @@ Ruby
 
 - Run `Palindrome.main("word or phrase of your choice")`
 
+Rust
+
+- Compile: `rustc palindrome.rs`
+
+-Run: `./palindrome INPUT_STRING`
+
 Scala
 
 - Run: `scala [-nocompdaemon] palindrome.scala INPUT_STRING`
