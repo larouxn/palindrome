@@ -10,7 +10,6 @@ fn is_palindrome(input: &str) -> bool {
 
 fn build_palindrome(input: &str) {
     let split: Vec<char> = input.chars().collect();
-    println!("{}", split.len());
     let mut map: HashMap<&char, i32> = HashMap::new();
     for ch in split.iter() {
         if !map.contains_key(ch) {
@@ -19,8 +18,46 @@ fn build_palindrome(input: &str) {
             *n = *n + 1;
         }
     }
-    for (k, v) in map.iter() {
-        println!("key = {}, val = {}", *k, *v);
+
+    let mut evens_map: HashMap<&char, i32> = HashMap::new();
+    let mut odds_map: HashMap<&char, i32> = HashMap::new();
+    for (k, v) in map {
+        if v % 2 == 0 {
+            evens_map.insert(k, v);
+        } else {
+            odds_map.insert(k, v);
+        }
+    }
+
+    if odds_map.len() > 1 {
+        println!("{} cannot be made into a palindrome", input);
+    } else {
+        let mut build_str = String::new();
+        for (k, v) in evens_map {
+            for i in 0..(v / 2) {
+                build_str.push(k.to_owned());
+            }
+        }
+
+        let mut single = 'x';
+        for (k, v) in odds_map {
+            if v > 1 {
+                for i in 0..(v / 2) {
+                    build_str.push(k.to_owned());
+                }
+            } else {
+                single = k.to_owned();
+            }
+        }
+
+        let mut str_rev_chs: Vec<char> = build_str.chars().collect();
+        str_rev_chs.reverse();
+        let mut final_str = build_str;
+        final_str.push(single);
+        for ch in str_rev_chs {
+            final_str.push(ch);
+        }
+        println!("A palindromic form of {} is {}", input, final_str);
     }
 }
 
