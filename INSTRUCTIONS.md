@@ -26,7 +26,7 @@ Erlang
 
 - Compile: `c(palindrome).`
 
-- Run: `palindrome::display(INPUT_STRING).`
+- Run: `palindrome::display("INPUT_STRING").`
 
 JavaScript
 

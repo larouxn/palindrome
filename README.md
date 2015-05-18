@@ -16,7 +16,7 @@ Languages
 - [x] Dart (larouxn)
 - [ ] dogescript
 - [x] Elm (robwhitaker)
-- [ ] Erlang (johnpaulwelsh) - in progress
+- [x] Erlang (johnpaulwelsh)
 - [x] Elixir (larouxn)
 - [ ] Fancy
 - [ ] Fantom
