@@ -12,7 +12,7 @@ Languages
 - [ ] Bash
 - [ ] Ceylon
 - [x] CoffeeScript (larouxn)
-- [ ] D (johnpaulwelsh) - in progress
+- [x] D (johnpaulwelsh)
 - [x] Dart (larouxn)
 - [ ] dogescript
 - [x] Elm (robwhitaker)
