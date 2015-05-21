@@ -8,6 +8,9 @@ CoffeeScript
 
 - Open Chrome or Firefox dev console, click run on website, watch console
 
+D
+- Run: `rdmd palindrome.d INPUT_STRING`
+
 Dart
 
 - Run: `dart palindrome.dart`
