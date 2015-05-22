@@ -18,8 +18,10 @@ Languages
 - [x] Elm (robwhitaker)
 - [x] Erlang (johnpaulwelsh)
 - [x] Elixir (larouxn)
+- [ ] Factor
 - [ ] Fancy
 - [ ] Fantom
+- [ ] Felix
 - [ ] Frege
 - [ ] Go (larouxn) - in progress
 - [ ] Gosu
