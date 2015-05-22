@@ -31,6 +31,10 @@ Erlang
 
 - Run: `palindrome::display("INPUT_STRING").`
 
+Factor
+
+- lol I have no idea
+
 JavaScript
 
 - Open Chrome or Firefox dev console, paste in code

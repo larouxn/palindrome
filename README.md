@@ -18,7 +18,7 @@ Languages
 - [x] Elm (robwhitaker)
 - [x] Erlang (johnpaulwelsh)
 - [x] Elixir (larouxn)
-- [ ] Factor
+- [ ] Factor (johnpaulwelsh) - in progress
 - [ ] Fancy
 - [ ] Fantom
 - [ ] Felix
