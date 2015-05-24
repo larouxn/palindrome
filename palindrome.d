@@ -53,7 +53,7 @@ void buildPalindrome(string input)
 
         char[] revCopy = buildStr.dup;
         reverse(revCopy);
-        writeln("A palindromeic form of ", input, " is ", buildStr ~ single ~ revCopy);
+        writeln("A palindromic form of ", input, " is ", buildStr ~ single ~ revCopy);
     }
 }
 
