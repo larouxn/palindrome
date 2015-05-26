@@ -36,7 +36,7 @@ Languages
 - [ ] Perl
 - [ ] Prolog (Yuxrier) - in progress
 - [ ] PureScript
-- [ ] Python (larouxn) - in progress
+- [ ] Python 3 (larouxn) - in progress
 - [x] Ruby (larouxn)
 - [x] Rust (johnpaulwelsh)
 - [x] Scala (johnpaulwelsh)
