@@ -36,13 +36,13 @@ Languages
 - [ ] Perl
 - [ ] Prolog (Yuxrier) - in progress
 - [ ] PureScript
-- [ ] Python
+- [ ] Python 3 (larouxn) - in progress
 - [x] Ruby (larouxn)
 - [x] Rust (johnpaulwelsh)
 - [x] Scala (johnpaulwelsh)
 
 Completion Breakdown by User
 - johnpaulwelsh -- 5 completed, 1 in progress
-- larouxn -- 5 completed, 1 in progress
+- larouxn -- 5 completed, 2 in progress
 - robwhitaker -- 2 completed, 0 in progress
 - Yuxrier -- 0 completed, 1 in progress
