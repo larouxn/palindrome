@@ -47,6 +47,10 @@ JavaScript
 
 - Type into console `main("word or phrase of your choice")`
 
+Julia
+
+- Run: `path/to/julia/executable palindrome.jl INPUT_STRING`
+
 Kotlin
 
 - Compile: `kotlin-jvm palindrome.kt -include-runtime -d palindrome.jar`
