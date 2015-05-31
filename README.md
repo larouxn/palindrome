@@ -11,7 +11,7 @@ Languages
 - [ ] Arduino
 - [ ] Bash
 - [ ] Ceylon
-- [ ] Clojure
+- [x] Clojure (johnpaulwelsh)
 - [x] CoffeeScript (larouxn)
 - [x] D (johnpaulwelsh)
 - [x] Dart (larouxn)
@@ -29,6 +29,7 @@ Languages
 - [x] Haskell (robwhitaker)
 - [ ] ~~Java~~ loljk
 - [x] JavaScript (larouxn)
+- [x] Julia (johnpaulwelsh)
 - [x] Kotlin (johnpaulwelsh)
 - [ ] Lua
 - [ ] Nim
@@ -42,7 +43,7 @@ Languages
 - [x] Scala (johnpaulwelsh)
 
 Completion Breakdown by User
-- johnpaulwelsh -- 5 completed, 1 in progress
+- johnpaulwelsh -- 7 completed, 1 in progress
 - larouxn -- 5 completed, 2 in progress
 - robwhitaker -- 2 completed, 0 in progress
 - Yuxrier -- 0 completed, 1 in progress

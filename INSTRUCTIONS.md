@@ -1,5 +1,11 @@
 #Instructions to Run
 
+Clojure
+
+- Run: `java -cp clojure.jar clojure.main palindrome.clj INPUT_STRING`
+
+- I have not done this myself, I ran it through IntelliJ
+
 CoffeeScript
 
 - Load http://coffeescript.org/
@@ -33,13 +39,17 @@ Erlang
 
 Factor
 
-- lol I have no idea
+- Something to do with loading it into the IDE listener
 
 JavaScript
 
 - Open Chrome or Firefox dev console, paste in code
 
 - Type into console `main("word or phrase of your choice")`
+
+Julia
+
+- Run: `path/to/julia/executable palindrome.jl INPUT_STRING`
 
 Kotlin
 
