@@ -13,19 +13,30 @@ def is_palindrome(string):
 
 def can_be_palindrome(freq):
     numberOfOdds = 0
-    for number in freq.values():
-        if number % 2 != 0:
+    for num in freq.values():
+        if num % 2 != 0:
             numberOfOdds += 1
     if numberOfOdds > 1:
         return False
     else:
         return True
 
+def create_palindrome(freq):
+    palindrome = ""
+    for (let, num) in freq.items():
+        if num % 2 != 0:
+            palindrome += let
+            freq[let] -= 1
+    for (let, num) in freq.items():
+        palindrome = (let * (int(round(num / 2)))) + palindrome + (let * (int(round(num / 2))))
+    return palindrome
+
 def main(string):
-    freq  = count_letters(string)
+    freq = count_letters(string)
     if is_palindrome(string):
         print ("{} is already a palindrome.".format(string))
     elif not can_be_palindrome(freq):
         print ("{} cannot be made into a palindrome.".format(string))
-    # else
-    #     print "Palindrome of #{string}: #{Palindrome.create(freq)}"
+    else:
+        palindrome = create_palindrome(freq)
+        print ("Palindrome of {}: {}".format(string, palindrome))

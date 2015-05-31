@@ -47,6 +47,14 @@ Kotlin
 
 - Run: `java -jar palindrome.jar INPUT_STRING`
 
+Python
+
+- Open REPL: `python3`
+
+- Import code by copy and pasting
+
+- Run `main("word or phrase of your choice")`
+
 Ruby
 
 - Open REPL: `irb`
