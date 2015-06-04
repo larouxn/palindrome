@@ -4,3 +4,4 @@ repl-temp-*
 elm.js
 *.beam
 *.jar
+nimcache/*

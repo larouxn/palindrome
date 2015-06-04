@@ -57,6 +57,10 @@ Kotlin
 
 - Run: `java -jar palindrome.jar INPUT_STRING`
 
+Nim
+
+- Run: `nim c -r --verbosity:0 palindrome.nim INPUT_STRING`
+
 Python
 
 - Open REPL: `python3`

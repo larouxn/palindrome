@@ -32,7 +32,7 @@ Languages
 - [x] Julia (johnpaulwelsh)
 - [x] Kotlin (johnpaulwelsh)
 - [ ] Lua
-- [ ] Nim
+- [x] Nim (johnpaulwelsh)
 - [ ] OCaml
 - [ ] Perl
 - [ ] Prolog (Yuxrier) - in progress
@@ -43,7 +43,7 @@ Languages
 - [x] Scala (johnpaulwelsh)
 
 Completion Breakdown by User
-- johnpaulwelsh -- 7 completed, 1 in progress
-- larouxn -- 5 completed, 2 in progress
+- johnpaulwelsh -- 8 completed, 1 in progress
+- larouxn -- 6 completed, 1 in progress
 - robwhitaker -- 2 completed, 0 in progress
 - Yuxrier -- 0 completed, 1 in progress
