@@ -69,7 +69,7 @@ Ruby
 
 - Open REPL: `irb`
 
-- Import module by pasting in code
+- Import module with copy/paste or run `require 'palindrome.rb'` from repo dir
 
 - Run `Palindrome.main("word or phrase of your choice")`
 
