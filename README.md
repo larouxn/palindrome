@@ -21,7 +21,7 @@ Languages
 - [x] Elixir (larouxn)
 - [ ] Factor (johnpaulwelsh) - in progress
 - [ ] Fancy
-- [ ] Fantom
+- [ ] Fantom (johnpaulwelsh) - in progress
 - [ ] Felix
 - [ ] Frege
 - [ ] Go (larouxn) - in progress
@@ -43,7 +43,7 @@ Languages
 - [x] Scala (johnpaulwelsh)
 
 Completion Breakdown by User
-- johnpaulwelsh -- 8 completed, 1 in progress
+- johnpaulwelsh -- 8 completed, 2 in progress
 - larouxn -- 6 completed, 1 in progress
 - robwhitaker -- 2 completed, 0 in progress
 - Yuxrier -- 0 completed, 1 in progress

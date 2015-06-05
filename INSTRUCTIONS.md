@@ -41,6 +41,10 @@ Factor
 
 - Something to do with loading it into the IDE listener
 
+Fantom
+
+- Run: `path/to/fantom/installation palindrome.fan INPUT_STRING`
+
 JavaScript
 
 - Open Chrome or Firefox dev console, paste in code
