@@ -5,3 +5,4 @@ elm.js
 *.beam
 *.jar
 nimcache/*
+.DS_Store/*

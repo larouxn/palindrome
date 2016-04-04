@@ -25,9 +25,10 @@ Languages
 - [ ] Felix
 - [ ] Frege
 - [ ] Go (larouxn) - in progress
-- [ ] Gosu
+- [x] Groovy (johnpaulwelsh)
+- [ ] Gosu (johnpaulwelsh) - in progress
 - [x] Haskell (robwhitaker)
-- [ ] ~~Java~~ loljk
+- [x] Java (johnpaulwelsh) (sorry, I caved)
 - [x] JavaScript (larouxn)
 - [x] Julia (johnpaulwelsh)
 - [x] Kotlin (johnpaulwelsh)
@@ -43,7 +44,7 @@ Languages
 - [x] Scala (johnpaulwelsh)
 
 Completion Breakdown by User
-- johnpaulwelsh -- 9 completed, 1 in progress
+- johnpaulwelsh -- 11 completed, 2 in progress
 - larouxn -- 6 completed, 1 in progress
 - robwhitaker -- 2 completed, 0 in progress
 - Yuxrier -- 0 completed, 1 in progress
