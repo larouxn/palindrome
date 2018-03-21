@@ -15,7 +15,7 @@ Languages
 - [x] CoffeeScript (larouxn)
 - [x] D (johnpaulwelsh)
 - [x] Dart (larouxn)
-- [ ] dogescript
+- [x] Dogescript (robwhitaker)
 - [x] Elm (robwhitaker)
 - [x] Erlang (johnpaulwelsh)
 - [x] Elixir (larouxn)
@@ -46,5 +46,5 @@ Languages
 Completion Breakdown by User
 - johnpaulwelsh -- 11 completed, 2 in progress
 - larouxn -- 6 completed, 1 in progress
-- robwhitaker -- 2 completed, 0 in progress
+- robwhitaker -- 3 completed, 0 in progress
 - Yuxrier -- 0 completed, 1 in progress
